@@ -1,0 +1,12 @@
+[Unit]
+Description=Lolz Bot 1
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/bot1
+ExecStart=/usr/bin/python3 -u /opt/bot1/bot_handlers.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
