@@ -1,0 +1,821 @@
+2026-08-01 20:44:16 [INFO] lolz: data saved: users=0 deals=0 blocked=0 refs=0
+2026-08-01 20:44:16 [INFO] lolz: Lolz Relayer bot starting (version 2.12.3)
+2026-08-01 20:44:16 [INFO] lolz: system owner: 7918304230 (@@BondarevX)
+2026-08-01 20:44:16 [INFO] lolz: admins: 2, workers: 0
+2026-08-01 20:44:20 [WARNING] lolz: admin_forum_send: topic=3 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-01 20:44:20 [INFO] lolz: digest: next run at 02.08 09:00 (in 12h)
+2026-08-01 20:44:20 [INFO] lolz: digest thread started
+2026-08-01 20:44:27 [WARNING] lolz: admin_forum_send: topic=3 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-01 20:44:27 [INFO] lolz: data saved: users=1 deals=0 blocked=0 refs=0
+2026-08-01 20:44:27 [INFO] lolz: new user: id=7918304230 @BondarevX ref=None
+2026-08-01 20:44:27 [INFO] lolz: data saved: users=1 deals=0 blocked=0 refs=0
+2026-08-01 20:44:27 [WARNING] lolz: admin_forum_send: topic=15 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-01 20:44:30 [INFO] lolz: data saved: users=1 deals=0 blocked=0 refs=0
+2026-08-01 20:51:26 [WARNING] lolz: admin_forum_send: topic=3 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-01 20:53:54 [ERROR] lolz: polling crashed: name '_clean_req' is not defined — restart in 5s
+Traceback (most recent call last):
+  File "d:\Python\VS Code\Materials\Проекты\лолз тест\bot_handlers.py", line 68, in <module>
+    bot.polling(none_stop=True, interval=0, timeout=35, long_polling_timeout=25)
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1211, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1286, in __threaded_polling
+    raise e
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1248, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 155, in raise_exceptions
+    raise self.exception_info
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 98, in run
+    task(*args, **kwargs)
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 10609, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\VS Code\Materials\Проекты\лолз тест\handlers\callbacks.py", line 141, in callback_handler
+    current = user['ton_wallet'] if _clean_req(user.get('ton_wallet')) else ns
+                                    ^^^^^^^^^^
+NameError: name '_clean_req' is not defined
+2026-08-01 20:54:01 [ERROR] lolz: polling crashed: name '_clean_req' is not defined — restart in 10s
+Traceback (most recent call last):
+  File "d:\Python\VS Code\Materials\Проекты\лолз тест\bot_handlers.py", line 68, in <module>
+    bot.polling(none_stop=True, interval=0, timeout=35, long_polling_timeout=25)
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1211, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1286, in __threaded_polling
+    raise e
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1248, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 155, in raise_exceptions
+    raise self.exception_info
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 98, in run
+    task(*args, **kwargs)
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 10609, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\VS Code\Materials\Проекты\лолз тест\handlers\callbacks.py", line 173, in callback_handler
+    current = user['phone_number'] if _clean_req(user.get('phone_number')) else ns
+                                      ^^^^^^^^^^
+NameError: name '_clean_req' is not defined
+2026-08-01 20:54:14 [ERROR] lolz: polling crashed: name '_clean_req' is not defined — restart in 20s
+Traceback (most recent call last):
+  File "d:\Python\VS Code\Materials\Проекты\лолз тест\bot_handlers.py", line 68, in <module>
+    bot.polling(none_stop=True, interval=0, timeout=35, long_polling_timeout=25)
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1211, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1286, in __threaded_polling
+    raise e
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1248, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 155, in raise_exceptions
+    raise self.exception_info
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 98, in run
+    task(*args, **kwargs)
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 10609, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\VS Code\Materials\Проекты\лолз тест\handlers\callbacks.py", line 173, in callback_handler
+    current = user['phone_number'] if _clean_req(user.get('phone_number')) else ns
+                                      ^^^^^^^^^^
+NameError: name '_clean_req' is not defined
+2026-08-01 20:54:34 [ERROR] lolz: polling crashed: name '_clean_req' is not defined — restart in 40s
+Traceback (most recent call last):
+  File "d:\Python\VS Code\Materials\Проекты\лолз тест\bot_handlers.py", line 68, in <module>
+    bot.polling(none_stop=True, interval=0, timeout=35, long_polling_timeout=25)
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1211, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1286, in __threaded_polling
+    raise e
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1248, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 155, in raise_exceptions
+    raise self.exception_info
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 98, in run
+    task(*args, **kwargs)
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 10609, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\VS Code\Materials\Проекты\лолз тест\handlers\callbacks.py", line 173, in callback_handler
+    current = user['phone_number'] if _clean_req(user.get('phone_number')) else ns
+                                      ^^^^^^^^^^
+NameError: name '_clean_req' is not defined
+2026-08-01 20:57:02 [ERROR] lolz: polling crashed: name '_clean_req' is not defined — restart in 60s
+Traceback (most recent call last):
+  File "d:\Python\VS Code\Materials\Проекты\лолз тест\bot_handlers.py", line 68, in <module>
+    bot.polling(none_stop=True, interval=0, timeout=35, long_polling_timeout=25)
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1211, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1286, in __threaded_polling
+    raise e
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1248, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 155, in raise_exceptions
+    raise self.exception_info
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 98, in run
+    task(*args, **kwargs)
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 10609, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\VS Code\Materials\Проекты\лолз тест\handlers\callbacks.py", line 157, in callback_handler
+    current = user['card_details'] if _clean_req(user.get('card_details')) else ns
+                                      ^^^^^^^^^^
+NameError: name '_clean_req' is not defined
+2026-08-01 20:58:03 [WARNING] lolz: admin_forum_send: topic=3 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-01 21:30:33 [WARNING] lolz: polling network blip (ReadTimeout): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15) — restart in 60s
+2026-08-01 21:32:52 [WARNING] lolz: admin_forum_send: topic=3 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-02 15:25:36 [INFO] lolz: data saved: users=1 deals=0 blocked=0 refs=0
+2026-08-02 15:25:36 [INFO] lolz: Lolz Relayer bot starting (version 2.12.3)
+2026-08-02 15:25:36 [INFO] lolz: system owner: 7918304230 (@@BondarevX)
+2026-08-02 15:25:36 [INFO] lolz: admins: 3, workers: 0
+2026-08-02 15:25:38 [INFO] lolz: digest: next run at 03.08 09:00 (in 18h)
+2026-08-02 15:25:38 [INFO] lolz: digest thread started
+2026-08-02 15:26:05 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 5s
+2026-08-02 15:26:16 [ERROR] TeleBot: Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-08-02 15:26:16 [ERROR] TeleBot: Exception traceback:
+Traceback (most recent call last):
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1247, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 116, in raise_exceptions
+    raise self.exception_info
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 98, in run
+    task(*args, **kwargs)
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 689, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 661, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 339, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 197, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2026-08-02 15:26:22 [ERROR] TeleBot: Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-08-02 15:26:22 [ERROR] TeleBot: Exception traceback:
+Traceback (most recent call last):
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1247, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 116, in raise_exceptions
+    raise self.exception_info
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 98, in run
+    task(*args, **kwargs)
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 689, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 661, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 339, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 197, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2026-08-02 15:26:28 [ERROR] TeleBot: Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-08-02 15:26:28 [ERROR] TeleBot: Exception traceback:
+Traceback (most recent call last):
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1247, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 116, in raise_exceptions
+    raise self.exception_info
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 98, in run
+    task(*args, **kwargs)
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 689, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 661, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 339, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 197, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2026-08-02 15:26:34 [ERROR] TeleBot: Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-08-02 15:26:34 [ERROR] TeleBot: Exception traceback:
+Traceback (most recent call last):
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1247, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 116, in raise_exceptions
+    raise self.exception_info
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 98, in run
+    task(*args, **kwargs)
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 689, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 661, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 339, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 197, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2026-08-02 15:26:40 [ERROR] TeleBot: Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-08-02 15:26:40 [ERROR] TeleBot: Exception traceback:
+Traceback (most recent call last):
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1247, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 116, in raise_exceptions
+    raise self.exception_info
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 98, in run
+    task(*args, **kwargs)
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 689, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 661, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 339, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 197, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2026-08-02 15:26:52 [ERROR] TeleBot: Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-08-02 15:26:52 [ERROR] TeleBot: Exception traceback:
+Traceback (most recent call last):
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1247, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 116, in raise_exceptions
+    raise self.exception_info
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 98, in run
+    task(*args, **kwargs)
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 689, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 661, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 339, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 197, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2026-08-02 15:27:17 [ERROR] TeleBot: Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-08-02 15:27:17 [ERROR] TeleBot: Exception traceback:
+Traceback (most recent call last):
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1247, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 116, in raise_exceptions
+    raise self.exception_info
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 98, in run
+    task(*args, **kwargs)
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 689, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 661, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 339, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 197, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2026-08-02 15:27:46 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 10s
+2026-08-02 15:28:06 [ERROR] TeleBot: Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-08-02 15:28:06 [ERROR] TeleBot: Exception traceback:
+Traceback (most recent call last):
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1247, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 116, in raise_exceptions
+    raise self.exception_info
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 98, in run
+    task(*args, **kwargs)
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 689, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 661, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 339, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 168, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 197, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 409. Description: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+
+2026-08-02 15:28:31 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 20s
+2026-08-02 15:31:45 [INFO] lolz: data saved: users=1 deals=0 blocked=0 refs=0
+2026-08-02 15:31:45 [INFO] lolz: Lolz Relayer bot starting (version 2.12.3)
+2026-08-02 15:31:45 [INFO] lolz: system owner: 7918304230 (@@BondarevX)
+2026-08-02 15:31:45 [INFO] lolz: admins: 3, workers: 0
+2026-08-02 15:31:47 [WARNING] lolz: admin_forum_send: topic=3 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-02 15:31:47 [INFO] lolz: digest: next run at 03.08 09:00 (in 17h)
+2026-08-02 15:31:47 [INFO] lolz: digest thread started
+2026-08-02 15:31:49 [WARNING] lolz: admin_forum_send: topic=3 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-02 15:31:49 [WARNING] lolz: admin_forum_send: topic=3 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-02 15:32:21 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 5s
+2026-08-02 15:33:13 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 10s
+2026-08-02 16:02:24 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 20s
+2026-08-02 16:33:34 [INFO] lolz: data saved: users=1 deals=0 blocked=0 refs=0
+2026-08-02 16:33:34 [INFO] lolz: Lolz Relayer bot starting (version 2.12.3)
+2026-08-02 16:33:34 [INFO] lolz: system owner: 7918304230 (@@BondarevX)
+2026-08-02 16:33:34 [INFO] lolz: admins: 3, workers: 0
+2026-08-02 16:33:35 [WARNING] lolz: admin_forum_send: topic=3 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-02 16:33:35 [INFO] lolz: digest: next run at 03.08 09:00 (in 16h)
+2026-08-02 16:33:35 [INFO] lolz: digest thread started
+2026-08-02 16:33:57 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 5s
+2026-08-02 16:34:13 [WARNING] lolz: admin_forum_send: topic=3 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-02 16:34:22 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 10s
+2026-08-02 16:35:36 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 20s
+2026-08-02 16:37:58 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 40s
+2026-08-02 21:19:25 [INFO] lolz: data saved: users=1 deals=0 blocked=0 refs=0
+2026-08-02 21:19:25 [INFO] lolz: Lolz Relayer bot starting (version 2.12.3)
+2026-08-02 21:19:25 [INFO] lolz: system owner: 7918304230 (@@BondarevX)
+2026-08-02 21:19:25 [INFO] lolz: admins: 3, workers: 0
+2026-08-02 21:19:26 [WARNING] lolz: admin_forum_send: topic=3 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-02 21:19:26 [INFO] lolz: digest: next run at 03.08 09:00 (in 12h)
+2026-08-02 21:19:26 [INFO] lolz: digest thread started
+2026-08-02 21:19:30 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 5s
+2026-08-02 21:19:36 [ERROR] lolz: polling crashed: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8850431786:AAHrBmU0g3_YIXfPhmk0dAZO9GmuJYX154s/getUpdates?offset=1&timeout=25 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)'))) — restart in 10s
+Traceback (most recent call last):
+  File "D:\Python\Lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "D:\Python\Lib\site-packages\urllib3\connectionpool.py", line 1092, in _validate_conn
+    conn.connect()
+  File "D:\Python\Lib\site-packages\urllib3\connection.py", line 642, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\urllib3\connection.py", line 783, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\urllib3\util\ssl_.py", line 469, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\urllib3\util\ssl_.py", line 513, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "D:\Python\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\Lib\site-packages\urllib3\connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Python\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\urllib3\connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8850431786:AAHrBmU0g3_YIXfPhmk0dAZO9GmuJYX154s/getUpdates?offset=1&timeout=25 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Python\VS Code\Materials\Проекты\лолз тест\bot_handlers.py", line 68, in <module>
+    bot.polling(none_stop=True, interval=0, timeout=35, long_polling_timeout=25)
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1211, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1286, in __threaded_polling
+    raise e
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 1247, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 116, in raise_exceptions
+    raise self.exception_info
+  File "D:\Python\Lib\site-packages\telebot\util.py", line 98, in run
+    task(*args, **kwargs)
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 689, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\__init__.py", line 661, in get_updates
+    json_updates = apihelper.get_updates(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 339, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\telebot\apihelper.py", line 162, in _make_request
+    result = _get_req_session().request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Python\Lib\site-packages\requests\adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8850431786:AAHrBmU0g3_YIXfPhmk0dAZO9GmuJYX154s/getUpdates?offset=1&timeout=25 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))
+2026-08-02 21:20:26 [WARNING] lolz: polling network blip (ReadTimeout): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=35) — restart in 20s
+2026-08-02 21:20:48 [WARNING] lolz: admin_forum_send: topic=3 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-02 21:21:12 [WARNING] lolz: admin_forum_send: topic=3 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-02 21:21:12 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 40s
+2026-08-02 21:22:17 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 60s
+2026-08-02 21:23:24 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 60s
+2026-08-02 21:24:42 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 60s
+2026-08-02 21:25:54 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 60s
+2026-08-02 21:27:40 [INFO] lolz: data saved: users=1 deals=0 blocked=0 refs=0
+2026-08-02 21:27:40 [INFO] lolz: Lolz Relayer bot starting (version 2.12.3)
+2026-08-02 21:27:40 [INFO] lolz: system owner: 7918304230 (@@BondarevX)
+2026-08-02 21:27:40 [INFO] lolz: admins: 3, workers: 0
+2026-08-02 21:27:40 [WARNING] lolz: admin_forum_send: topic=3 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-02 21:27:40 [INFO] lolz: digest: next run at 03.08 09:00 (in 12h)
+2026-08-02 21:27:40 [INFO] lolz: digest thread started
+2026-08-02 21:27:51 [WARNING] lolz: admin_forum_send: topic=3 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-02 21:27:58 [WARNING] lolz: answer_callback_query failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-02 21:27:58 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 5s
+2026-08-03 10:35:17 [INFO] lolz: data saved: users=1 deals=0 blocked=0 refs=0
+2026-08-03 10:35:18 [INFO] lolz: Lolz Relayer bot starting (version 2.12.3)
+2026-08-03 10:35:18 [INFO] lolz: system owner: 7918304230 (@@BondarevX)
+2026-08-03 10:35:18 [INFO] lolz: admins: 3, workers: 0
+2026-08-03 10:35:18 [WARNING] lolz: admin_forum_send: topic=3 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-03 10:35:18 [INFO] lolz: digest: next run at 04.08 09:00 (in 22h)
+2026-08-03 10:35:18 [INFO] lolz: digest thread started
+2026-08-03 10:35:41 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 5s
+2026-08-03 10:35:52 [WARNING] lolz: admin_forum_send: topic=3 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-03 10:36:01 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 10s
+2026-08-03 10:36:51 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 20s
+2026-08-03 17:18:21 [INFO] lolz: data saved: users=1 deals=0 blocked=0 refs=0
+2026-08-03 17:18:21 [INFO] lolz: Lolz Relayer bot starting (version 2.12.3)
+2026-08-03 17:18:21 [INFO] lolz: system owner: 7918304230 (@@BondarevX)
+2026-08-03 17:18:21 [INFO] lolz: admins: 3, workers: 0
+2026-08-03 17:18:22 [WARNING] lolz: admin_forum_send: topic=3 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-03 17:18:22 [INFO] lolz: digest: next run at 04.08 09:00 (in 16h)
+2026-08-03 17:18:22 [INFO] lolz: digest thread started
+2026-08-03 17:18:54 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 5s
+2026-08-03 17:19:22 [INFO] lolz: data saved: users=1 deals=0 blocked=0 refs=0
+2026-08-03 17:19:22 [INFO] lolz: Lolz Relayer bot starting (version 2.12.3)
+2026-08-03 17:19:22 [INFO] lolz: system owner: 7918304230 (@@BondarevX)
+2026-08-03 17:19:22 [INFO] lolz: admins: 3, workers: 0
+2026-08-03 17:19:22 [WARNING] lolz: admin_forum_send: topic=3 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-03 17:19:22 [INFO] lolz: digest: next run at 04.08 09:00 (in 16h)
+2026-08-03 17:19:22 [INFO] lolz: digest thread started
+2026-08-03 17:19:45 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 5s
+2026-08-03 17:20:34 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 10s
+2026-08-03 17:21:25 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 20s
+2026-08-03 17:22:15 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 40s
+2026-08-03 17:22:19 [INFO] lolz: data saved: users=1 deals=0 blocked=0 refs=0
+2026-08-03 17:22:19 [INFO] lolz: Lolz Relayer bot starting (version 2.12.3)
+2026-08-03 17:22:19 [INFO] lolz: system owner: 7918304230 (@@BondarevX)
+2026-08-03 17:22:19 [INFO] lolz: admins: 3, workers: 0
+2026-08-03 17:22:20 [WARNING] lolz: admin_forum_send: topic=3 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-03 17:22:20 [INFO] lolz: digest: next run at 04.08 09:00 (in 16h)
+2026-08-03 17:22:20 [INFO] lolz: digest thread started
+2026-08-03 17:22:43 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 5s
+2026-08-03 17:22:58 [WARNING] lolz: admin_forum_send: topic=3 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-03 17:23:03 [WARNING] lolz: admin_forum_send: topic=3 failed: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8850431786:AAHrBmU0g3_YIXfPhmk0dAZO9GmuJYX154s/sendMessage?chat_id=-1004373662178&text=%2Fstart%0A%F0%9F%91%A4+%40BondarevX+%287918304230%29&link_preview_options=%7B%22is_disabled%22%3A+true%7D&parse_mode=HTML&message_thread_id=3 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000026187B95F50>, 'Connection to api.telegram.org timed out. (connect timeout=15)'))
+2026-08-03 17:23:05 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 10s
+2026-08-03 17:23:19 [WARNING] lolz: admin_forum_send: topic=3 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-03 17:23:55 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 20s
+2026-08-03 17:24:21 [WARNING] lolz: polling network blip (ConnectionError): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) — restart in 40s
+2026-08-04 00:15:18 [INFO] lolz: data saved: users=1 deals=0 blocked=0 refs=0
+2026-08-04 00:15:18 [INFO] lolz: Lolz Relayer bot starting (version 2.12.3)
+2026-08-04 00:15:18 [INFO] lolz: system owner: 7918304230 (@@BondarevX)
+2026-08-04 00:15:18 [INFO] lolz: admins: 3, workers: 0
+2026-08-04 00:15:33 [WARNING] lolz: admin_forum_send: topic=3 failed: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+2026-08-04 00:15:33 [INFO] lolz: digest: next run at 04.08 09:00 (in 9h)
+2026-08-04 00:15:33 [INFO] lolz: digest thread started
+2026-08-04 00:15:49 [WARNING] lolz: polling network blip (ReadTimeout): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15) — restart in 5s
+2026-08-04 00:16:09 [WARNING] lolz: polling network blip (ReadTimeout): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15) — restart in 10s
+2026-08-04 00:16:35 [WARNING] lolz: polling network blip (ReadTimeout): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15) — restart in 20s
+2026-08-04 00:17:11 [WARNING] lolz: polling network blip (ReadTimeout): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15) — restart in 40s
+2026-08-04 00:18:06 [WARNING] lolz: polling network blip (ReadTimeout): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15) — restart in 60s
+2026-08-04 00:19:22 [WARNING] lolz: polling network blip (ReadTimeout): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15) — restart in 60s
+2026-08-04 00:20:38 [WARNING] lolz: polling network blip (ReadTimeout): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15) — restart in 60s
+2026-08-04 00:21:53 [WARNING] lolz: polling network blip (ReadTimeout): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15) — restart in 60s
+2026-08-04 00:23:09 [WARNING] lolz: polling network blip (ReadTimeout): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15) — restart in 60s
+2026-08-04 00:24:24 [WARNING] lolz: polling network blip (ReadTimeout): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15) — restart in 60s
+2026-08-04 00:25:40 [WARNING] lolz: polling network blip (ReadTimeout): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15) — restart in 60s
+2026-08-04 00:26:56 [WARNING] lolz: polling network blip (ReadTimeout): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15) — restart in 60s
+2026-08-04 00:28:33 [WARNING] lolz: polling network blip (ReadTimeout): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=35) — restart in 60s
+2026-08-04 00:30:09 [WARNING] lolz: polling network blip (ReadTimeout): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=35) — restart in 60s
+2026-08-04 00:31:44 [WARNING] lolz: polling network blip (ReadTimeout): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=35) — restart in 60s
+2026-08-04 00:33:20 [WARNING] lolz: polling network blip (ReadTimeout): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=35) — restart in 60s
+2026-08-04 00:34:41 [WARNING] lolz: polling network blip (ConnectTimeout): HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8850431786:AAHrBmU0g3_YIXfPhmk0dAZO9GmuJYX154s/getUpdates?offset=1&timeout=25 (Caused by ConnectTimeoutError( — restart in 60s
+2026-08-04 00:36:17 [WARNING] lolz: polling network blip (ReadTimeout): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=35) — restart in 60s
+2026-08-04 00:37:53 [WARNING] lolz: polling network blip (ReadTimeout): HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=35) — restart in 60s
+2026-08-30 19:32:08 [INFO] lolz: data saved: users=1 deals=0 blocked=0 refs=0
+2026-08-30 19:32:09 [INFO] lolz: Lolz Relayer bot starting (version 2.12.3)
+2026-08-30 19:32:09 [INFO] lolz: system owner: 1292195734 (@)
+2026-08-30 19:32:09 [INFO] lolz: admins: 4, workers: 0
+2026-08-30 19:32:12 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 19:32:12 [INFO] lolz: digest: next run at 31.08 09:00 (in 13h)
+2026-08-30 19:32:12 [INFO] lolz: digest thread started
+2026-08-30 19:33:39 [WARNING] lolz: got signal 2, saving state and exiting...
+2026-08-30 19:33:39 [INFO] lolz: data saved: users=1 deals=0 blocked=0 refs=0
+2026-08-30 19:34:01 [INFO] lolz: data saved: users=1 deals=0 blocked=0 refs=0
+2026-08-30 19:34:01 [INFO] lolz: Lolz Relayer bot starting (version 2.12.3)
+2026-08-30 19:34:01 [INFO] lolz: system owner: 1292195734 (@)
+2026-08-30 19:34:01 [INFO] lolz: admins: 4, workers: 0
+2026-08-30 19:34:05 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 19:34:05 [INFO] lolz: digest: next run at 31.08 09:00 (in 13h)
+2026-08-30 19:34:05 [INFO] lolz: digest thread started
+2026-08-30 19:34:08 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 19:34:08 [INFO] lolz: data saved: users=2 deals=0 blocked=0 refs=0
+2026-08-30 19:34:08 [INFO] lolz: new user: id=8865327113 @LolzDeals_Manager ref=None
+2026-08-30 19:34:08 [INFO] lolz: data saved: users=2 deals=0 blocked=0 refs=0
+2026-08-30 19:34:08 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 19:34:11 [INFO] lolz: data saved: users=2 deals=0 blocked=0 refs=0
+2026-08-30 19:36:27 [WARNING] lolz: got signal 2, saving state and exiting...
+2026-08-30 19:36:27 [INFO] lolz: data saved: users=2 deals=0 blocked=0 refs=0
+2026-08-30 19:37:27 [INFO] lolz: data saved: users=2 deals=0 blocked=0 refs=0
+2026-08-30 19:37:27 [INFO] lolz: Lolz Relayer bot starting (version 2.12.3)
+2026-08-30 19:37:27 [INFO] lolz: system owner: 8865327113 (@)
+2026-08-30 19:37:27 [INFO] lolz: admins: 5, workers: 0
+2026-08-30 19:37:28 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 19:37:28 [INFO] lolz: digest: next run at 31.08 09:00 (in 13h)
+2026-08-30 19:37:28 [INFO] lolz: digest thread started
+2026-08-30 19:37:35 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 19:48:46 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 19:48:46 [INFO] lolz: data saved: users=3 deals=0 blocked=0 refs=0
+2026-08-30 19:48:46 [INFO] lolz: new user: id=8972005584 @ZelenkaBot_Deals ref=None
+2026-08-30 19:48:46 [INFO] lolz: data saved: users=3 deals=0 blocked=0 refs=0
+2026-08-30 19:48:47 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 19:48:53 [INFO] lolz: data saved: users=3 deals=0 blocked=0 refs=0
+2026-08-30 19:49:19 [INFO] lolz.floor: floor_client: utils_nft_floor недоступен (No module named 'utils_nft_floor') — работаем только через public API
+2026-08-30 19:49:19 [INFO] lolz: data saved: users=3 deals=1 blocked=0 refs=0
+2026-08-30 19:49:19 [WARNING] lolz: team forum log failed (new_deal): A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 19:49:19 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 19:49:19 [INFO] lolz: data saved: users=3 deals=1 blocked=0 refs=0
+2026-08-30 19:49:32 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 19:49:32 [INFO] lolz: data saved: users=4 deals=1 blocked=0 refs=0
+2026-08-30 19:49:32 [INFO] lolz: new user: id=8917849247 @Hfjsksjgc ref=None
+2026-08-30 19:49:32 [INFO] lolz: data saved: users=4 deals=1 blocked=0 refs=0
+2026-08-30 19:49:33 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 19:49:33 [INFO] lolz: data saved: users=4 deals=1 blocked=0 refs=0
+2026-08-30 19:49:33 [INFO] lolz: data saved: users=4 deals=1 blocked=0 refs=0
+2026-08-30 19:50:14 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 19:50:45 [INFO] lolz: data saved: users=4 deals=1 blocked=0 refs=0
+2026-08-30 19:50:45 [INFO] lolz: data saved: users=4 deals=1 blocked=0 refs=0
+2026-08-30 19:50:45 [WARNING] lolz: admin_forum_send: topic=16 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 19:50:45 [INFO] lolz: data saved: users=4 deals=1 blocked=0 refs=0
+2026-08-30 19:51:05 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 19:51:30 [INFO] lolz: data saved: users=4 deals=1 blocked=0 refs=0
+2026-08-30 19:51:30 [INFO] lolz: data saved: users=4 deals=1 blocked=0 refs=0
+2026-08-30 19:51:36 [INFO] lolz: data saved: users=4 deals=1 blocked=0 refs=0
+2026-08-30 19:51:36 [INFO] lolz: data saved: users=4 deals=1 blocked=0 refs=0
+2026-08-30 19:51:36 [WARNING] lolz: team forum log failed (payment): A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 19:51:36 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 19:52:28 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 19:52:28 [INFO] lolz: data saved: users=5 deals=1 blocked=0 refs=0
+2026-08-30 19:52:28 [INFO] lolz: new user: id=8353497371 @Lolipoppapik ref=None
+2026-08-30 19:52:28 [INFO] lolz: data saved: users=5 deals=1 blocked=0 refs=0
+2026-08-30 19:52:28 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 19:52:48 [INFO] lolz: data saved: users=5 deals=1 blocked=0 refs=0
+2026-08-30 19:53:21 [INFO] lolz: data saved: users=5 deals=1 blocked=0 refs=0
+2026-08-30 19:54:04 [WARNING] lolz: got signal 2, saving state and exiting...
+2026-08-30 19:54:04 [INFO] lolz: data saved: users=5 deals=1 blocked=0 refs=0
+2026-08-30 23:30:00 [INFO] lolz: data saved: users=5 deals=1 blocked=0 refs=0
+2026-08-30 23:30:00 [INFO] lolz: Lolz Relayer bot starting (version 2.12.3)
+2026-08-30 23:30:00 [INFO] lolz: system owner: 8865327113 (@)
+2026-08-30 23:30:00 [INFO] lolz: admins: 5, workers: 1
+2026-08-30 23:30:01 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 23:30:01 [INFO] lolz: digest: next run at 31.08 09:00 (in 9h)
+2026-08-30 23:30:01 [INFO] lolz: digest thread started
+2026-08-30 23:30:02 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 23:30:02 [INFO] lolz: data saved: users=6 deals=1 blocked=0 refs=0
+2026-08-30 23:30:02 [INFO] lolz: new user: id=6557722710 @mowomee ref=None
+2026-08-30 23:30:02 [INFO] lolz: data saved: users=6 deals=1 blocked=0 refs=0
+2026-08-30 23:30:02 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 23:30:23 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 23:32:30 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 23:34:35 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 23:34:35 [INFO] lolz: data saved: users=7 deals=1 blocked=0 refs=0
+2026-08-30 23:34:35 [INFO] lolz: new user: id=1292195734 @pothousey ref=None
+2026-08-30 23:34:35 [INFO] lolz: data saved: users=7 deals=1 blocked=0 refs=0
+2026-08-30 23:34:35 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 23:34:37 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 23:34:37 [INFO] lolz: data saved: users=8 deals=1 blocked=0 refs=0
+2026-08-30 23:34:37 [INFO] lolz: new user: id=8674532082 @fexxanft1 ref=None
+2026-08-30 23:34:37 [INFO] lolz: data saved: users=8 deals=1 blocked=0 refs=0
+2026-08-30 23:34:37 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 23:34:43 [INFO] lolz: data saved: users=8 deals=1 blocked=0 refs=0
+2026-08-30 23:53:09 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 23:53:09 [INFO] lolz: data saved: users=9 deals=1 blocked=0 refs=0
+2026-08-30 23:53:09 [INFO] lolz: new user: id=5389047789 @Swkwud ref=None
+2026-08-30 23:53:09 [INFO] lolz: data saved: users=9 deals=1 blocked=0 refs=0
+2026-08-30 23:53:09 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-30 23:53:12 [INFO] lolz: data saved: users=9 deals=1 blocked=0 refs=0
+2026-08-31 00:26:00 [INFO] lolz: sweeper: cleared 1 awaiting_* for user=5389047789 (idle 32min)
+2026-08-31 00:26:00 [INFO] lolz: data saved: users=9 deals=1 blocked=0 refs=0
+2026-08-31 00:44:34 [WARNING] lolz: got signal 2, saving state and exiting...
+2026-08-31 00:44:34 [INFO] lolz: data saved: users=9 deals=1 blocked=0 refs=0
+2026-08-31 15:30:29 [INFO] lolz: data saved: users=9 deals=1 blocked=0 refs=0
+2026-08-31 15:30:29 [INFO] lolz: Lolz Relayer bot starting (version 2.12.3)
+2026-08-31 15:30:29 [INFO] lolz: system owner: 8865327113 (@)
+2026-08-31 15:30:29 [INFO] lolz: admins: 5, workers: 1
+2026-08-31 15:30:30 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-31 15:30:30 [INFO] lolz: digest: next run at 01.09 09:00 (in 17h)
+2026-08-31 15:30:30 [INFO] lolz: digest thread started
+2026-08-31 15:30:32 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-31 15:30:32 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-31 15:30:32 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-31 15:30:32 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-08-31 15:30:36 [WARNING] lolz: got signal 2, saving state and exiting...
+2026-08-31 15:30:36 [INFO] lolz: data saved: users=9 deals=1 blocked=0 refs=0
+2026-08-31 15:31:35 [INFO] lolz: data saved: users=9 deals=1 blocked=0 refs=0
+2026-08-31 15:31:35 [INFO] lolz: Lolz Relayer bot starting (version 2.12.3)
+2026-08-31 15:31:35 [INFO] lolz: system owner: 8865327113 (@@LolzDeals_Manager)
+2026-08-31 15:31:35 [INFO] lolz: admins: 5, workers: 1
+2026-08-31 15:31:36 [INFO] lolz: digest: next run at 01.09 09:00 (in 17h)
+2026-08-31 15:31:36 [INFO] lolz: digest thread started
+2026-08-31 15:32:59 [INFO] lolz.floor: floor_client: utils_nft_floor недоступен (No module named 'utils_nft_floor') — работаем только через public API
+2026-08-31 15:32:59 [INFO] lolz: data saved: users=9 deals=2 blocked=0 refs=0
+2026-08-31 15:32:59 [INFO] lolz: data saved: users=9 deals=2 blocked=0 refs=0
+2026-08-31 15:33:27 [INFO] lolz: data saved: users=9 deals=2 blocked=0 refs=0
+2026-08-31 15:33:27 [INFO] lolz: data saved: users=9 deals=2 blocked=0 refs=0
+2026-08-31 15:34:48 [INFO] lolz: data saved: users=9 deals=2 blocked=0 refs=0
+2026-08-31 15:34:48 [INFO] lolz: data saved: users=9 deals=2 blocked=0 refs=0
+2026-08-31 15:34:48 [INFO] lolz: data saved: users=9 deals=2 blocked=0 refs=0
+2026-08-31 15:35:25 [INFO] lolz: data saved: users=9 deals=2 blocked=0 refs=0
+2026-08-31 15:35:25 [INFO] lolz: data saved: users=9 deals=2 blocked=0 refs=0
+2026-08-31 15:35:34 [INFO] lolz: data saved: users=9 deals=2 blocked=0 refs=0
+2026-08-31 15:35:34 [INFO] lolz: data saved: users=9 deals=2 blocked=0 refs=0
+2026-08-31 15:35:54 [INFO] lolz: data saved: users=9 deals=2 blocked=0 refs=0
+2026-08-31 15:36:11 [INFO] lolz: data saved: users=9 deals=2 blocked=0 refs=0
+2026-08-31 16:06:00 [WARNING] lolz: got signal 2, saving state and exiting...
+2026-08-31 16:06:00 [INFO] lolz: data saved: users=9 deals=2 blocked=0 refs=0
+2026-08-31 17:32:29 [INFO] lolz: data saved: users=9 deals=2 blocked=0 refs=0
+2026-08-31 17:32:29 [INFO] lolz: Lolz Relayer bot starting (version 2.12.3)
+2026-08-31 17:32:29 [INFO] lolz: system owner: 8865327113 (@@LolzDeals_Manager)
+2026-08-31 17:32:29 [INFO] lolz: admins: 5, workers: 2
+2026-08-31 17:32:30 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message thread not found
+2026-08-31 17:32:30 [INFO] lolz: digest: next run at 01.09 09:00 (in 15h)
+2026-08-31 17:32:30 [INFO] lolz: digest thread started
+2026-08-31 17:33:53 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message thread not found
+2026-08-31 17:36:20 [WARNING] lolz: got signal 2, saving state and exiting...
+2026-08-31 17:36:20 [INFO] lolz: data saved: users=9 deals=2 blocked=0 refs=0
+2026-08-31 22:23:47 [INFO] lolz: data saved: users=9 deals=2 blocked=0 refs=0
+2026-08-31 22:23:47 [INFO] lolz: Lolz Relayer bot starting (version 2.12.3)
+2026-08-31 22:23:47 [INFO] lolz: system owner: 8865327113 (@@LolzDeals_Manager)
+2026-08-31 22:23:47 [INFO] lolz: admins: 5, workers: 2
+2026-08-31 22:23:49 [INFO] lolz: digest: next run at 01.09 09:00 (in 11h)
+2026-08-31 22:23:49 [INFO] lolz: digest thread started
+2026-08-31 22:23:50 [INFO] lolz: data saved: users=10 deals=2 blocked=0 refs=0
+2026-08-31 22:23:50 [INFO] lolz: new user: id=8988146324 @8988146324 ref=None
+2026-08-31 22:23:50 [INFO] lolz: data saved: users=10 deals=2 blocked=0 refs=0
+2026-08-31 22:23:50 [INFO] lolz: data saved: users=11 deals=2 blocked=0 refs=0
+2026-08-31 22:23:50 [INFO] lolz: new user: id=8832787311 @8832787311 ref=None
+2026-08-31 22:23:50 [INFO] lolz: data saved: users=11 deals=2 blocked=0 refs=0
+2026-08-31 22:23:51 [INFO] lolz: data saved: users=12 deals=2 blocked=0 refs=0
+2026-08-31 22:23:51 [INFO] lolz: new user: id=8931969295 @bioeibot ref=None
+2026-08-31 22:23:51 [INFO] lolz: data saved: users=12 deals=2 blocked=0 refs=0
+2026-08-31 22:23:51 [INFO] lolz: data saved: users=13 deals=2 blocked=0 refs=0
+2026-08-31 22:23:51 [INFO] lolz: new user: id=8797979365 @xiotibot ref=None
+2026-08-31 22:23:51 [INFO] lolz: data saved: users=13 deals=2 blocked=0 refs=0
+2026-08-31 22:23:51 [INFO] lolz: data saved: users=14 deals=2 blocked=0 refs=0
+2026-08-31 22:23:51 [INFO] lolz: new user: id=7586472105 @7586472105 ref=None
+2026-08-31 22:23:51 [INFO] lolz: data saved: users=14 deals=2 blocked=0 refs=0
+2026-08-31 22:23:51 [INFO] lolz: data saved: users=14 deals=2 blocked=0 refs=0
+2026-08-31 22:23:51 [INFO] lolz: data saved: users=14 deals=2 blocked=0 refs=0
+2026-08-31 22:23:51 [INFO] lolz: data saved: users=14 deals=2 blocked=0 refs=0
+2026-08-31 22:53:17 [INFO] lolz: data saved: users=15 deals=2 blocked=0 refs=0
+2026-08-31 22:53:17 [INFO] lolz: new user: id=8831057080 @Kuperowq ref=None
+2026-08-31 22:53:17 [INFO] lolz: data saved: users=15 deals=2 blocked=0 refs=0
+2026-08-31 22:53:18 [INFO] lolz: data saved: users=15 deals=2 blocked=0 refs=0
+2026-08-31 22:53:55 [INFO] lolz: data saved: users=16 deals=2 blocked=0 refs=0
+2026-08-31 22:53:55 [INFO] lolz: new user: id=8881739780 @xbdrp ref=None
+2026-08-31 22:53:55 [INFO] lolz: data saved: users=16 deals=2 blocked=0 refs=0
+2026-08-31 22:55:10 [INFO] lolz: data saved: users=17 deals=2 blocked=0 refs=0
+2026-08-31 22:55:10 [INFO] lolz: new user: id=5612430843 @loyefa ref=None
+2026-08-31 22:55:10 [INFO] lolz: data saved: users=17 deals=2 blocked=0 refs=0
+2026-08-31 22:58:20 [INFO] lolz: data saved: users=18 deals=2 blocked=0 refs=0
+2026-08-31 22:58:20 [INFO] lolz: new user: id=8479053417 @anatofobia ref=None
+2026-08-31 22:58:20 [INFO] lolz: data saved: users=18 deals=2 blocked=0 refs=0
+2026-08-31 22:58:23 [INFO] lolz: data saved: users=18 deals=2 blocked=0 refs=0
+2026-08-31 23:02:27 [INFO] lolz: data saved: users=19 deals=2 blocked=0 refs=0
+2026-08-31 23:02:27 [INFO] lolz: new user: id=1477023183 @fisaew ref=None
+2026-08-31 23:02:27 [INFO] lolz: data saved: users=19 deals=2 blocked=0 refs=0
+2026-08-31 23:02:28 [INFO] lolz: data saved: users=19 deals=2 blocked=0 refs=0
+2026-08-31 23:05:22 [INFO] lolz: data saved: users=19 deals=2 blocked=0 refs=0
+2026-08-31 23:05:22 [INFO] lolz: data saved: users=19 deals=2 blocked=0 refs=0
+2026-08-31 23:16:50 [INFO] lolz: data saved: users=20 deals=2 blocked=0 refs=0
+2026-08-31 23:16:50 [INFO] lolz: new user: id=8680508893 @qixdhe ref=None
+2026-08-31 23:16:50 [INFO] lolz: data saved: users=20 deals=2 blocked=0 refs=0
+2026-08-31 23:16:52 [INFO] lolz: data saved: users=20 deals=2 blocked=0 refs=0
+2026-08-31 23:39:47 [INFO] lolz: sweeper: cleared 1 awaiting_* for user=8479053417 (idle 31min)
+2026-08-31 23:39:47 [INFO] lolz: data saved: users=20 deals=2 blocked=0 refs=0
+2026-08-31 23:42:34 [INFO] lolz: data saved: users=21 deals=2 blocked=0 refs=0
+2026-08-31 23:42:34 [INFO] lolz: new user: id=7108060150 @Galechkaaaaaa12 ref=None
+2026-08-31 23:42:34 [INFO] lolz: data saved: users=21 deals=2 blocked=0 refs=0
+2026-08-31 23:42:37 [INFO] lolz: data saved: users=21 deals=2 blocked=0 refs=0
+2026-08-31 23:43:22 [INFO] lolz.floor: floor_client: utils_nft_floor недоступен (No module named 'utils_nft_floor') — работаем только через public API
+2026-08-31 23:43:22 [INFO] lolz: data saved: users=21 deals=3 blocked=0 refs=0
+2026-08-31 23:43:23 [INFO] lolz: data saved: users=21 deals=3 blocked=0 refs=0
+2026-08-31 23:56:26 [WARNING] lolz: got signal 2, saving state and exiting...
+2026-08-31 23:56:26 [INFO] lolz: data saved: users=21 deals=3 blocked=0 refs=0
+2026-09-02 17:40:42 [INFO] lolz: data saved: users=21 deals=3 blocked=0 refs=0
+2026-09-02 17:40:42 [INFO] lolz: Lolz Relayer bot starting (version 2.12.3)
+2026-09-02 17:40:42 [INFO] lolz: system owner: 8865327113 (@@LolzDeals_Manager)
+2026-09-02 17:40:42 [INFO] lolz: admins: 5, workers: 3
+2026-09-02 17:40:46 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-09-02 17:40:46 [INFO] lolz: digest: next run at 03.09 09:00 (in 15h)
+2026-09-02 17:40:46 [INFO] lolz: digest thread started
+2026-09-02 17:40:49 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-09-02 17:48:09 [WARNING] lolz: got signal 2, saving state and exiting...
+2026-09-02 17:48:09 [INFO] lolz: data saved: users=21 deals=3 blocked=0 refs=0
+2026-09-04 14:53:20 [INFO] lolz: data saved: users=21 deals=3 blocked=0 refs=0
+2026-09-04 14:53:20 [INFO] lolz: Lolz Relayer bot starting (version 2.12.3)
+2026-09-04 14:53:20 [INFO] lolz: system owner: 8865327113 (@@LolzDeals_Manager)
+2026-09-04 14:53:20 [INFO] lolz: admins: 5, workers: 3
+2026-09-04 14:53:23 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-09-04 14:53:23 [INFO] lolz: digest: next run at 05.09 09:00 (in 18h)
+2026-09-04 14:53:23 [INFO] lolz: digest thread started
+2026-09-04 15:03:16 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-09-04 15:12:45 [INFO] lolz: data saved: users=21 deals=3 blocked=0 refs=0
+2026-09-04 15:12:47 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-09-04 15:22:36 [INFO] lolz: data saved: users=21 deals=3 blocked=0 refs=0
+2026-09-04 15:22:37 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-09-04 15:23:39 [INFO] lolz: data saved: users=21 deals=3 blocked=0 refs=0
+2026-09-04 15:23:39 [INFO] lolz: data saved: users=21 deals=3 blocked=0 refs=0
+2026-09-04 15:23:40 [INFO] lolz: data saved: users=21 deals=3 blocked=0 refs=0
+2026-09-04 15:24:02 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-09-04 15:24:02 [INFO] lolz: data saved: users=22 deals=3 blocked=0 refs=0
+2026-09-04 15:24:02 [INFO] lolz: new user: id=7416752702 @freymowol ref=None
+2026-09-04 15:24:02 [INFO] lolz: data saved: users=22 deals=3 blocked=0 refs=0
+2026-09-04 15:24:02 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-09-04 15:24:03 [INFO] lolz: data saved: users=22 deals=3 blocked=0 refs=0
+2026-09-04 15:24:11 [INFO] lolz: data saved: users=22 deals=3 blocked=0 refs=0
+2026-09-04 15:24:11 [INFO] lolz: data saved: users=22 deals=3 blocked=0 refs=0
+2026-09-04 15:24:11 [INFO] lolz: data saved: users=22 deals=3 blocked=0 refs=0
+2026-09-04 15:27:15 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-09-04 15:27:15 [INFO] lolz: data saved: users=23 deals=3 blocked=0 refs=0
+2026-09-04 15:27:15 [INFO] lolz: new user: id=8396026321 @DigitaiWhale ref=None
+2026-09-04 15:27:15 [INFO] lolz: data saved: users=23 deals=3 blocked=0 refs=0
+2026-09-04 15:27:15 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-09-04 15:27:16 [INFO] lolz: data saved: users=23 deals=3 blocked=0 refs=0
+2026-09-04 15:27:28 [INFO] lolz: data saved: users=23 deals=3 blocked=0 refs=0
+2026-09-04 15:27:28 [INFO] lolz: data saved: users=23 deals=3 blocked=0 refs=0
+2026-09-04 15:27:28 [INFO] lolz: data saved: users=23 deals=3 blocked=0 refs=0
+2026-09-04 15:28:23 [INFO] lolz: data saved: users=23 deals=4 blocked=0 refs=0
+2026-09-04 15:28:23 [INFO] lolz: data saved: users=23 deals=4 blocked=0 refs=0
+2026-09-04 15:28:23 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-09-04 15:30:32 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-09-04 15:30:32 [INFO] lolz: data saved: users=24 deals=4 blocked=0 refs=0
+2026-09-04 15:30:32 [INFO] lolz: new user: id=7749994006 @sns_xd ref=None
+2026-09-04 15:30:32 [INFO] lolz: data saved: users=24 deals=4 blocked=0 refs=0
+2026-09-04 15:30:32 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-09-04 15:30:34 [INFO] lolz: data saved: users=24 deals=4 blocked=0 refs=0
+2026-09-04 15:49:16 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-09-04 15:49:16 [INFO] lolz: data saved: users=25 deals=4 blocked=0 refs=0
+2026-09-04 15:49:16 [INFO] lolz: new user: id=8022025600 @stormvor ref=None
+2026-09-04 15:49:16 [INFO] lolz: data saved: users=25 deals=4 blocked=0 refs=0
+2026-09-04 15:49:16 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-09-04 15:49:18 [INFO] lolz: data saved: users=25 deals=4 blocked=0 refs=0
+2026-09-04 15:52:34 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-09-04 16:03:09 [INFO] lolz: sweeper: cleared 1 awaiting_* for user=8396026321 (idle 35min)
+2026-09-04 16:03:09 [INFO] lolz: data saved: users=25 deals=4 blocked=0 refs=0
+2026-09-04 16:32:56 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-09-04 16:32:56 [INFO] lolz: data saved: users=26 deals=4 blocked=0 refs=0
+2026-09-04 16:32:56 [INFO] lolz: new user: id=8634340286 @8634340286 ref=None
+2026-09-04 16:32:56 [INFO] lolz: data saved: users=26 deals=4 blocked=0 refs=0
+2026-09-04 16:32:56 [WARNING] lolz: admin_forum_send: topic=7 failed: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: chat not found
+2026-09-04 16:32:58 [INFO] lolz: data saved: users=26 deals=4 blocked=0 refs=0
+2026-09-04 16:36:24 [WARNING] lolz: got signal 2, saving state and exiting...
+2026-09-04 16:36:24 [INFO] lolz: data saved: users=26 deals=4 blocked=0 refs=0
+2026-09-04 16:56:59 [INFO] lolz: data saved: users=26 deals=3 blocked=0 refs=0
+2026-09-04 16:56:59 [INFO] lolz: data saved: users=26 deals=3 blocked=0 refs=0
+2026-09-05 12:21:30 [INFO] lolz: data saved: users=26 deals=3 blocked=0 refs=0
+2026-09-05 12:21:30 [INFO] lolz: data saved: users=26 deals=3 blocked=0 refs=0
