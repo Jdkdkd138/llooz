@@ -15,13 +15,16 @@ def health():
     return "OK", 200
 
 def run_bot():
-    try:
-        print("🚀 BOT POLLING STARTED", flush=True)
-        bot_handlers.bot.polling(non_stop=True, timeout=35, long_polling_timeout=25)
-    except Exception as e:
-        print(f"💥 BOT CRASHED: {e}", flush=True)
-        traceback.print_exc()
-        threading.Timer(10, run_bot).start()
+    while True:
+        try:
+            print("🚀 BOT POLLING STARTED", flush=True)
+            bot_handlers.bot.polling(non_stop=True, timeout=35, long_polling_timeout=25)
+        except Exception as e:
+            print(f"💥 BOT CRASHED: {e}", flush=True)
+            traceback.print_exc()
+            print("🔁 RESTARTING IN 5 SECONDS...", flush=True)
+            import time
+            time.sleep(5)
 
 if __name__ == '__main__':
     print("🔥 STARTING BOT THREAD", flush=True)
